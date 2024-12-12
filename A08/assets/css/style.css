@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: rgb(200, 200, 255);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #d32f2f;
+    z-index: 100;
+}
+
+nav .w3-bar-item {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.island-div {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 40px);
+    transition: transform 0.3s ease;
+}
+
+.island-div:hover {
+    transform: scale(1.05);
+}
+
+.island-div h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.island-div p {
+    font-size: 1rem;
+}
+
+.island-image {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.island-image:hover {
+    opacity: 0.8;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-item {
+    background-color: rgb(245, 245, 245);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-text {
+    margin-top: 10px;
+}
+
+.content-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.island-bg-0 {
+    background-color: #FF6F61;
+}
+
+.island-bg-1 {
+    background-color: #FFD700;
+}
+
+.island-bg-2 {
+    background-color: #8A2BE2;
+}
+
+.island-bg-3 {
+    background-color: #32CD32;
+}
+
+.island-bg-4 {
+    background-color: #1E90FF;
+}
+
+.left-align {
+    justify-content: flex-start;
+}
+
+.right-align {
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .portfolio-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .island-div {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .w3-bar {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .island-div {
+        width: 90%;
+    }
+
+    .w3-bar {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
